@@ -2,6 +2,7 @@
 API REST - Buscador Inteligente
 
 ## BabelRC
+```sh
 {
   "presets": [
     "@babel/preset-env",
@@ -11,8 +12,11 @@ API REST - Buscador Inteligente
     ["@babel/transform-runtime"]
   ]  
 }
+```
 
 ## Env
+```sh
 MONGODB_URI
 SECRET_TOKEN=Agroinsumos
 PORT=4000
+```
