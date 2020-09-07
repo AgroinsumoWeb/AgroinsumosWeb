@@ -1,0 +1,1 @@
+"use strict";var mongoose=require("mongoose");mongoose.connect(process.env.MONGODB_URI,{useNewUrlParser:!0,useUnifiedTopology:!0,useCreateIndex:!0,useFindAndModify:!1}).then(function(){return console.log("DB is connect")})["catch"](function(a){return console.log(a)});

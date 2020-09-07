@@ -1,0 +1,1 @@
+"use strict";var _require=require("mongoose"),Schema=_require.Schema,model=_require.model,SearchSchema=new Schema({search:{type:String,required:!0},user:{type:String,required:!0},office:{type:String,required:!0},branchoffice:{type:String,required:!0},auditoria:{type:Date,required:!0,default:Date.now}});module.exports=model("Searchs",SearchSchema);
