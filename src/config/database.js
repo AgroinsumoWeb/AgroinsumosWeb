@@ -1,7 +1,15 @@
 const mongoose = require("mongoose");
 
+const environmentUri = () => {
+  if (process.env.NODE_ENV == "produtions") {
+    return process.env.MONGODB_URI_PY;
+  } else {
+    return process.env.MONGODB_URI_DEV;
+  }
+}
+
 mongoose
-  .connect(process.env.MONGODB_URI, {
+  .connect(environmentUri(), {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,

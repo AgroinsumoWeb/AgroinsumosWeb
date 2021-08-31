@@ -4,9 +4,9 @@
   "description": "API REST - AGD Agroinsumos",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src --exec babel-node",
+    "dev": "set NODE_ENV=development && nodemon src --exec babel-node",
     "build": "babel src -d dist --no-comments",
-    "start": "node dist",
+    "start": "set NODE_ENV=production && node dist",
     "clear": "rimraf dist"
   },
   "author": "Ezequiel Antonio Nuñez",
